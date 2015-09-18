@@ -13,3 +13,15 @@ Pizza.prototype.pieSizePrice = function() {
     return basePieSizePrice + 6;
   }
 };
+
+Pizza.prototype.toppingComboPrice = function() {
+  var baseToppingComboPrice = 0;
+
+  if (this.toppingCombo === "Italian Combo") {
+    return baseToppingComboPrice + 5;
+  } else if (this.toppingCombo === "Veggie Combo") {
+    return baseToppingComboPrice + 6;
+  } else {
+    return baseToppingComboPrice + 7;
+  }
+};
