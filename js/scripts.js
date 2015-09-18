@@ -12,7 +12,7 @@ Pizza.prototype.pieSizePrice = function() {
   } else {
     return basePieSizePrice + 6;
   }
-};
+}
 
 Pizza.prototype.toppingComboPrice = function() {
   var baseToppingComboPrice = 0;
@@ -24,10 +24,14 @@ Pizza.prototype.toppingComboPrice = function() {
   } else {
     return baseToppingComboPrice + 7;
   }
-};
+}
 
 Pizza.prototype.quantityPrice = function() {
   var baseQuantityPrice = 3;
   var totalQuantityPrice = this.quantity * baseQuantityPrice;
   return totalQuantityPrice;
+}
+
+Pizza.prototype.totalPrice = function() {
+  return this.pieSizePrice() + this.toppingComboPrice() + this.quantityPrice();
 }

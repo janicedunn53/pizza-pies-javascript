@@ -20,4 +20,9 @@ describe('Pizza', function() {
     var testPizza = new Pizza(3, "Italian Combo", "Medium");
     expect(testPizza.quantityPrice()).to.equal(9);
   });
+
+  it("creates the total pizza price", function () {
+    var testPizza = new Pizza(3, "Italian Combo", "Medium");
+    expect(testPizza.totalPrice()).to.equal(19);
+  });
 });
