@@ -5,3 +5,8 @@
 #show {
   display: block;
 }
+
+body {
+  text-align: center;
+  background-color: #fcedff;
+}

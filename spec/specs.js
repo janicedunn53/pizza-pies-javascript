@@ -18,11 +18,11 @@ describe('Pizza', function() {
 
   it("adds the quantityPrice method to all pizza orders", function() {
     var testPizza = new Pizza(3, "italian-combo", "medium");
-    expect(testPizza.quantityPrice()).to.equal(9);
+    expect(testPizza.quantityPrice()).to.equal(15);
   });
 
   it("creates the total pizza price", function () {
     var testPizza = new Pizza(3, "italian-combo", "medium");
-    expect(testPizza.totalPrice()).to.equal(19);
+    expect(testPizza.totalPrice()).to.equal(25);
   });
 });

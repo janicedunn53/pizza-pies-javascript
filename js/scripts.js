@@ -10,7 +10,7 @@ Pizza.prototype.pieSizePrice = function() {
   if (this.pieSize === "medium") {
     return basePieSizePrice + 5;
   } else {
-    return basePieSizePrice + 6;
+    return basePieSizePrice + 7;
   }
 }
 
@@ -27,7 +27,7 @@ Pizza.prototype.toppingComboPrice = function() {
 }
 
 Pizza.prototype.quantityPrice = function() {
-  var baseQuantityPrice = 3;
+  var baseQuantityPrice = 5;
   var totalQuantityPrice = this.quantity * baseQuantityPrice;
   return totalQuantityPrice;
 }
@@ -47,7 +47,6 @@ $(document).ready(function() {
     var newPizza = new Pizza(quantityInput, toppingComboInput, pieSizeInput);
 
     $("#total-price").text("$" + newPizza.totalPrice() + ".00");
-debugger;
     $(".show-price").show();
   });
 });
