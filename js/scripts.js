@@ -25,3 +25,9 @@ Pizza.prototype.toppingComboPrice = function() {
     return baseToppingComboPrice + 7;
   }
 };
+
+Pizza.prototype.quantityPrice = function() {
+  var baseQuantityPrice = 3;
+  var totalQuantityPrice = this.quantity * baseQuantityPrice;
+  return totalQuantityPrice;
+}

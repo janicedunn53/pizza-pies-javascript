@@ -16,4 +16,8 @@ describe('Pizza', function() {
     expect(testPizza.toppingComboPrice()).to.equal(5);
   });
 
+  it("adds the quantityPrice method to all pizza orders", function() {
+    var testPizza = new Pizza(3, "Italian Combo", "Medium");
+    expect(testPizza.quantityPrice()).to.equal(9);
+  });
 });
