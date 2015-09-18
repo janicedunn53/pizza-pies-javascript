@@ -44,10 +44,10 @@ $(document).ready(function() {
     var toppingComboInput = $('input[name=combo]:checked').val();
     var quantityInput = parseInt($('input#quantity').val());
 
-    var newPizza = new Pizza(pieSizeInput, toppingComboInput, quantityInput);
+    var newPizza = new Pizza(quantityInput, toppingComboInput, pieSizeInput);
 
     $("#total-price").text("$" + newPizza.totalPrice() + ".00");
-
+debugger;
     $(".show-price").show();
   });
 });
